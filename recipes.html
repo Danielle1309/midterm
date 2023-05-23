@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>recipes</title>
+<link href="../midterm-japanesecuisine/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="recipes.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body data-bs-spy="scroll" data-bs-target="#navbar-recipes" data-offset="200">	
+<!--Utilized Navbar template from https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+  <a class="navbar-brand" href="../midterm-japanesecuisine/home.html" style="font-family: Palatino">TASTE OF JAPAN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../midterm-japanesecuisine/home.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="../midterm-japanesecuisine/recipes.html">Recipes<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../midterm-japanesecuisine/quiz.html">Quiz</a>
+      </li>
+    </ul>
+  </div>
+</nav>		
+<!--referenced nested scrollspy code from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_scrollspy_affix2&stacked=h-->
+<main>
+	<div class="container">
+		<div class="row">
+		<nav id="navbar-recipes" class="bg-light col-md-3 position-fixed">
+		  <ul class="nav nav-pills flex-column affix">
+			  <li><h5><a class="navbar-brand"><strong>Recipes</strong></a></h5></li>
+			  <li><h5><a href="#soups">Soups</a></h5></li>
+			  <li><a href="#miso-soup">• Miso Soup</a></li>
+			  <li><a href="#tonjiru">• Tonjiru</a></li>
+			  <li><a href="#udon-soup">• Udon Soup</a></li>
+			  <li><a href="#sukiyaki">• Sukiyaki</a></li>	
+			  <li><h5><a href="#side-dishes">Side Dishes</a></h5></li>
+			  <li><a href="#steamed-vegetables">• Steamed Vegetables</a></li>
+			  <li><a href="#tempura">• Tempura</a></li>
+			  <li><a href="#rolled-omelet">• Rolled Omelet</a></li>
+			  <li><a href="#fried-tofu">• Fried Tofu</a></li>
+			  <li><a href="#potato-salad">• Potato Salad</a></li>
+			  <li><h5><a href="#main-dishes">Main Dishes</a></h5></li>
+			  <li><a href="#curry-rice">• Curry Rice</a></li>
+			  <li><a href="#yakisoba">• Yakisoba</a></li>
+			  <li><a href="#oyakodon">• Oyakodon</a></li>
+			  <li><a href="#salmon-ochazuke">• Salmon Ochazuke</a></li>
+			  <li><a href="#tonkatsu">• Tonkatsu</a></li>
+		  </ul>
+		</nav>
+		
+<!--Begin Recipe Section, enjoy-->		
+		<div class="offset-4 col-md-8 mt-5"  data-bs-spy="scroll" data-bs-target="#navbar-recipes" data-offset="250" tabindex="0">
+		<h2>Japanese Cuisine Recipes</h2>	
+		<h4 class="category" id="soups">Soups</h4>	
+		<!--Miso Soup-->	
+		  <div id="miso-soup" class="list-group recipe"><div class="list-group-item">
+			<h5 >Miso Soup</h5>
+			  <p><em>A classic start to any Japanese meal with umami-rich stock. </em></p>
+			  <span class="badge badge-secondary">5-10 min</span>
+			  <span class="badge badge-info">Dairy</span>
+			  <span class="badge badge-success">Vegan</span>	
+			  <span class="badge badge-warning">Savory</span>		
+		   </div> <div class="list-group-item">
+			  <img src="https://hips.hearstapps.com/hmg-prod/images/miso-soup-horizontal-jpg-1529350400.jpg?crop=0.8890666666666666xw:1xh;center,top&resize=1200:*" alt="Miso Soup Image" width="60%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-1">• 1 cup of water</p>
+			<p class="mb-1">• 2 teaspoons Dashi granules</p>
+			<p class="mb-1">• 3 tablespoons Miso Paste</p>  
+			<p class="mb-1">• 1 package of Tofu</p> 
+			<p class="mb-1">• 1 package of Seaweed</p>  
+			<p class="mb-1">• Green Onions (Optional)</p>  
+		   </div> <div class="list-group-item">
+			<h5 class="mb-1">Steps</h5>
+			<p class="mb-1">1. In a pot, combine water and dashi over medium-high heat until boil. </p>
+			<p class="mb-1">2. Reduce to medium head and whisk in miso paste. </p> 
+			<p class="mb-1">3. Add in tofu and seaweed and simmer for 2-3 minutes</p>  
+			<p class="mb-1">4. Remove heat and serve in a bowl. Optional to top with green onions.</p>  
+		   </div> </div>
+		<br>	
+		<!--Tonjiru-->
+		  <div id="tonjiru" class="list-group"><div class="list-group-item">		
+			  <h5>Tonjiru</h5>
+			  <p><em>Nourishing soup best served in the winter</em></p>
+			  <span class="badge badge-secondary">20-30 min</span> 
+			  <span class="badge badge-warning">Savory</span>
+			  <span class="badge badge-light">Gluten</span>
+		   </div> 
+			  <div class="list-group-item">
+			  <img src="https://www.chopstickchronicles.com/wp-content/uploads/2022/02/Tonjiru-26-1.jpg" alt="Tonjiru Image" width="60%"></div>
+			  <div class ="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-1">For Soup Ingredients:</p> 
+			<ul> 
+				<p class="mb-0">• 1/2 lb Pork Belly</p>
+				<p class="mb-0">• 1 Burdock Root</p>
+				<p class="mb-0">• 1 Taro</p>
+				<p class="mb-0">• 1 Konjac</p>
+				<p class="mb-0">• 1 package of Tofu</p>
+			</ul>  
+			<p class="mb-1">For Soup:</p> 
+			<ul> 
+				<p class="mb-0">• 1 cup of Dashi Stock</p>
+				<p class="mb-0">• 1 tablespoon Miso Paste</p>
+				<p class="mb-0">• 3/4 teaspoon Sesame Oil</p>
+			</ul>  	  
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Cut the pork belly into 1" cube sizes.</p>
+			  <p class="mb-1">2. Scrape the outer skin of the burdok root with a knife, do not use a peeler. After that, make a cross incision and shave off slice of the root. Rinse them well and set aside</p>
+			  <p class="mb-1">3. Peel the taro with a knife and cut into 1/3" cube sizes. Soak well and set aside.</p>
+			  <p class="mb-1">4. Slice radish and carrots into thin slices and set aside. </p>
+			  <p class="mb-1">5. Cut the konjac into rectangular pieces and rub the pieces with salt; let it sit for 5 minutes. Boil the kanjac pieces for 2-3 minutes and drain. </p>
+			  <p class="mb-1">6. In a pot, stir-fry the porkbelly slices with cooking oil until cooked. Add the radish, carrots, burdock root, taro, and konjac after that.</p>
+			<p class="mb-1">7. Pour in the dashi stock and and cover it with a lid until it's boiling. After that, lower heat and simmer for 15-20 minutes.</p>
+			  <p class="mb-1">8. Turn off heat. With a small strainer, pour the miso paste and whisk into the soup. Top with sesame oil and serve in a bowl.</p>
+			</div> </div>
+		<br>	
+		<!--Udon-->	
+		  <div id="udon-soup" class="list-group"> <div class="list-group-item">	
+			  <h5>Udon Soup</h5>
+			  <p>Thick or thin chewy noodles with a simple broth, enjoyed as it is.</p>
+			  <span class="badge badge-warning">Savory</span>
+			  <span class="badge badge-light">Gluten</span>
+			  <span class="badge badge-success">Vegan</span>
+			</div> <div class="list-group-item">
+			  <img src="https://www.justonecookbook.com/wp-content/uploads/2021/10/Kake-Udon-2253-I-500x500.jpg" alt="Udon Soup Image" width="60%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-0">• 1 serving of udon noodles</p>
+			<p class="mb-0">• 1 cup of Dashi Stock</p>
+			<p class="mb-0">• 3/4 tablespoons Soy Sauce</p>
+			<p class="mb-0">• 1/2 tablespoons Mirin (Sweet Cooking Wine)</p>
+			<p class="mb-0">• 1/2 teaspoon sugar</p>  
+			<p class="mb-0">• Pre-Made Udon Stock</p>  
+			</div> <div class="list-group-item">
+			<h5 class="mb-1">Steps</h5>
+			<p class="mb-1">1. Cook noodles in boiling water for 5-8 minutes, or until fully cooked</p>
+			<p class="mb-1">2. In another pot, pour soy sauce, dashi stock, mirin, and sugar together and bring it to a simmer. For pre-made udon broth, follow instructions on the package.</p>
+			<p class="mb-1">3. Put udon and broth in a bowl and serve. You can also add additional toppings, like seaweed, fish cakes, <a class="ingredient-link" href="#fried-tofu">fried tofu</a>, and more.</p>  
+			</div> </div>
+		<br>	
+		<!--Sukiyaki-->	
+		<div id="sukiyaki" class="list-group"> <div class="list-group-item">	
+			 <h5>Sukiyaki Mini Hot Pot</h5>
+			 <p>Sweet and salty broth with nutritious ingredients in rich with flavor for one serving</p>
+			 <span class="badge badge-secondary">15-20 min</span>
+			 <span class="badge badge-light">Gluten</span>
+			 <span class="badge badge-warning">Sweet and Salty</span>
+			</div> <div class="list-group-item">
+			  <img src="https://www.justonecookbook.com/wp-content/uploads/2023/01/Sukiyaki-4752-I-500x500.jpg" alt="Sukiyaki Image" width="60%"></div>
+			<div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-1">• 1 cup of Dashi Kombu Stock</p>
+			<p class="mb-1">• 1/4 cup Sake</p>
+			<p class="mb-1">• 1/4 cup Mirin (Sweet Cooking Wine)</p>
+			<p class="mb-1">• 1 1/2 tablespoons Sugar</p>
+			<p class="mb-1">• 1/4 cup Soy Sauce</p>  
+			<p class="mb-1">• Hot Pot Ingredients:</p> 
+			 <ul>
+			   <p class="mb-0">Protein: Thin Slices of Chicken, Beef, Pork; Tofu; Egg</p>
+			   <p class="mb-0">Vegetables: Napa Cabbage, Bok Choy, Carrots, Mushroom (Enoki, Shitake, Maitake)</p>
+			   <p class="mb-0">Noodles: Ramen or Udon, Thin or Thick</p>
+			 </ul>
+			</div> <div class="list-group-item">
+			<h5 class="mb-1">Steps</h5>
+			<p class="mb-1">1. In a saucepan, pour soy sauce, sake, mirin, and sugar together and mix over medium heat until the sugar is dissolved or mix comes to a boil.</p>
+			<p class="mb-1">2. Prepare all Hot Pot Ingredients to your liking. This includes cutting the proteins and vegetables to peeling any excess dirt</p>
+			<p class="mb-1">3. Put udon and broth in a bowl and serve. You can also add additional toppings, like seaweed, fish cakes, <a class="ingredient-link" href="#fried-tofu">fried tofu</a>, and more.</p>  
+			</div> </div>
+		<br>	
+		<!--Side Dishes-->	
+		<h4 id="side-dishes" class= "category">Side Dishes</h4>
+		<!--Steamed Vegetable-->	
+		 <div id="steamed-vegetables" class="list-group"> <div class="list-group-item">	 
+			  <h5>Steamed Vegetables</h5>
+			  <p>Simple side of vegetable softened for the tongue and seasoned lightly, in less than 3 minutes.</p>
+			  <span class="badge badge-secondary">2-3 min</span>
+			  <span	class="badge badge-success">Vegan</span>
+			  <span class="badge badge-primary">Dairy-Free</span>
+			  <span class="badge badge-light">Gluten-Free</span>
+			</div> <div class="list-group-item">
+			  <img src="https://lowcarbafrica.com/wp-content/uploads/2022/03/Instant-Pot-Steamed-Vegetables-IG-1.jpg" alt="Vegetables Image" width="60%"></div><div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-1">• Assorted Vegetables (Carrots, Mushrooms, Broccoli, etc.) </p>
+			<p class="mb-1">• 2 teaspoons butter(optional)</p>
+			<p class="mb-1">• Salt</p>  
+			</div> <div  class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Cut vegetables to a desired size and amount and put in a bowl.</p>
+			  <p class="mb-1">2. Add a splash of watter, butter, and salt. </p>
+			  <p class="mb-1">3. Cover with a microavable plastic wrap and microwave for 2-3 minutes on high power.</p>
+			  <p class="mb-1">4. Carefully remove the plastic wrap (be careful of steam), mix vegetables and enjoy.</p>
+			  </div> </div>
+		<br>		
+		<!--Tempura-->	
+		 <div id="tempura" class="list-group"> <div class="list-group-item">	
+		  <h5>Tempura</h5>
+		  <p><em>Vegetables, shrimp, and more, dipped a light batter and fried to perfection.</em></p>
+		  <span class="badge badge-secondary">10-15 min</span>
+		  <span class="badge badge-light">Gluten</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-warning">Contains Egg</span>
+		  <span class="badge badge-primary">Dairy-Free</span>
+		  </div> <div class="list-group-item">
+			  <img src="https://kimchimari.com/wp-content/uploads/2011/04/Tempura-Vegetables-Twigim.jpg" alt="Tempura Image" width="60%"></div>
+			 <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+			<p class="mb-1">• 1 cup of cold water</p>
+			<p class="mb-1">• 1 Egg</p>  
+			<p class="mb-1">• 1 cup of all-purpose flour (Optional to change to gluten-free)</p> 
+			<p class="mb-1">• Any seafood or vegetable</p>
+			<ul>
+				<p>* Recommended vegetables to fry: broccoli, mushrooms, squash, sweet potato, and carrots.</p>
+				<p>* Recommended seafood to fry: shrimp, white fish chunks</p>
+			</ul>
+			</div><div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Beat egg thoroughly.</p>
+			  <p class="mb-1">2. In a bowl, mix flour (sifted if possible), beaten egg, and water together. For a crispy result, use ice-cold water.</p>
+			  <p class="mb-1">3. In a deep-fryer or pot of vegetable oil, heat up to 355F-350F (170C-180C). Dip your seafood or vegetable in the batter and cook until golden (3-5 minutes).</p>
+			  <p class="mb-1">4. Remove from fryer and place on a paper towel-covered plate to drain excel oil. Can be served with rice or sauce.</p>
+			  </div></div>
+		<br>	
+		<!--Rolled Omelet-->	 
+		  <div id="rolled-omelet" class="list-group"> <div class="list-group-item">	
+			<h5>Rolled Omelet</h5>
+		  <p>Whisked egg cooked and rolled into a beautiful rectangular shape</p>
+		  <span class="badge badge-secondary">5-10 min</span>
+		  <span class="badge badge-Warning">Eggs</span>		 
+		  </div> <div class="list-group-item">
+			  <img src="https://cookingwithdog.com/wp-content/uploads/2017/03/tamagoyaki-00.jpg" class="card-img-bottom rounded" alt="Rolled Omelet Image" width="30%"></div> <div class="list-group-item">
+				<h5 class="mb-1">Ingredients</h5>
+					<p class="mb-1">• 2 Eggs</p>
+					<p class="mb-1">• 1/4 teaspoon sugar</p>
+					<p class="mb-1">• 1/8 teaspoon salt</p> 
+					<p class="mb-1">• 1/8 teaspoon Dashi granules</p> 
+					<p class="mb-1">• 1/8 teaspoon soy sauce</p>  
+					<p class="mb-1">• 4 tablespoons water</p>  
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. In a small bowl or cup, mix sugar, salt, Dashi granules, soy sauce together. Add water and mix until sugar is dissolved.</p>
+			  <p class="mb-1">2. Whisk eggs in another bowl to a good consistency. Add in the dashi mixture, and mix.</p> 
+			  <p class="mb-1">3. Heat up pan to a medium high heat with olive oil. There are two ways to cook depending on pan:</p> 
+			  <ul>
+					<li><p class="mb-1">(1) Round pan - Pour in egg mixture. Once it looks like its alsmost cooked, fold the sides so shape is recangular. <br> Roll egg mixture from the top side with a spatula or chopsticks and push it to the side of the pan farthest from you. Repeat this step until there is no leftover egg mixture.</p></li>
+					<li><p class="mb-1">(2) Square pan - Pour in egg mixture. Once it looks like its alsmost cooked, roll egg mixture from the top side with a spatula or chopsticks and push it to the side of the pan farthest from you. Repeat this step until there is no leftover egg mixture.</p></li>
+			  </ul>
+			  <p class="mb-1">4. Place on a plate and cut it into slices to enjoy.</p>
+			  </div> </div>
+		<br>		
+		<!--Fried Tofu-->	 
+		  <div id="fried-tofu" class="list-group"> <div class="list-group-item">
+		  <h5>Fried Tofu</h5>
+		  <p>A light delicacy that can simply be enjoyed with just soy sauce.</p>
+		  <span class="badge badge-secondary">10-15 min</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy-Free</span>		  
+		  </div>  <div class="list-group-item">
+			  <img src="https://cookingwithdog.com/wp-content/uploads/2017/04/agedashi-tofu-00.jpg" class="card-img-bottom rounded" alt="Fried Tofu Image" width="30%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 1 block of Medium-Firm Tofu</p>
+				<p class="mb-1">• 4 tablspoons potato starch/cornstarch</p>
+				<p class="mb-1">• Cooking Oil</p>  
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Heat oil in pot or fryer up to 330F (165C).</p>
+			  <p class="mb-1">2. Cut tofu block into bite size pieces and coat in cornstarch evenly.</p>
+			  <p class="mb-1">3. Add three pieces at a time in the fryer and cook until light brown or crispy (2-3 minutes).</p>
+			  <p class="mb-1">4. Drain excess oil from fried pieces with a paper-towel tray and enjoy. Best served with soy sauce on the side. </p>
+			  </div> </div>
+		<br>		
+		<!--Potato Salad-->	 
+		  <div id="potato-salad" class="list-group"> <div class="list-group-item">	 
+		  <h5 >Potato Salad</h5>
+		  <p>A potato salad recipe that brings out the sweetness in vegetables and its seasonings. </p>
+		  <span class="badge badge-secondary">10-15 min</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy-Free</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://www.justonecookbook.com/wp-content/uploads/2021/06/Japanese-Potato-Salad-9258-I-2.jpg" class="card-img-bottom rounded" alt="Potato Salad Image" width="30%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 2 Potatoes</p>
+				<p class="mb-1">• Mayonnaise</p>
+				<p class="mb-1">• 1/4 cup of canned/frozen corn</p>
+				<p class="mb-1">• One Carrot</p>
+				<p class="mb-1">• 2 slices of ham</p>
+				<p class="mb-1">• Salt</p>  
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Cut potatoes to 1 1/2 pieces and boil them in a pot with a pinch of salt over medium high heat for 15 minutes.</p>
+			  <p class="mb-1">2. Drain water and mash potatoes to a good consistency.</p>
+			  <p class="mb-1">3. In another pot, boil corn for 5 minutes, and boil egg to hard boil for 8-11 minutes. Peel egg and cut into small pieces</p>
+			  <p class="mb-1">4. Slice carrots and ham into thin pieces.</p>
+			  <p class="mb-1">5. Mix all ingredients together with mayonnaise and enjoy.</p>
+			  </div> </div>	
+		<br>	 
+		  <h4 id="main-dishes" class="category">Main Dishes</h4>
+		<!--Curry Rice-->
+		  <div id="curry-rice" class="list-group"> <div class="list-group-item">	 
+		  <h5>Curry Rice</h5>
+		  <span class="badge badge-danger">Comfort Food</span>
+		  <span class="badge badge-secondary">30 min</span>	
+		  <span class="badge badge-light">Gluten</span>	
+		  <span class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy Free</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Beef_curry_rice_003.jpg" alt="Curry rice Image" width="60%"></div>
+			  <div class="list-group-item">
+				<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• One Carrot</p>
+				<p class="mb-1">• One Mushroom</p>
+				<p class="mb-1">• One Potato</p>  
+				<p class="mb-1">• 1/2 lb Meat (Optional)</p>
+				<p class="mb-1">• 1 1/2 pieces of <a class="ingredient-link" href="https://www.amazon.com/Golden-Curry-Sauce-Medium-8-4-Ounce/dp/B0011ULFVG">Curry Roux Mix</a></p>
+				</div> <div class="list-group-item">  
+				<h5 class="mb-1">Steps</h5>
+				<p class="mb-1">1. Chop vegetables and meat and stir fry them in a pot until cooked</p>
+				<p class="mb-1">2. Pour 1 1/4 cups of water and wait for it to boil. After that, turn to low heat and cover pot. Let it simmer for 15-20 min on low heat.</p>
+				<p class="mb-1">3. Remove heat and add curry roux in to the mix by pieces. </p>
+				<p class="mb-1">4. Pour water amount indicated by the curry roux’s box and let it simmer for 15-20 min on low heat.</p>
+				<p class="mb-1">5. Serve with rice.</p>
+		  </div></div>
+			<br>	
+		<!--Yakisoba-->	 
+		  <div id="yakisoba" class="list-group"> <div class="list-group-item">	
+		  <h5>Yakisoba</h5>
+		  <p> Savory stiry-fry noodles filled with umami flavor!</p>
+		  <span class="badge badge-secondary">10-20 min</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy-Free</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://www.marionskitchen.com/wp-content/uploads/2023/01/Feel-Good-Eggs-and-Bacon-Yakisoba-02.jpg" alt="Yakisoba Image" width="60%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 1/2 lb of pork belly</p>
+				<p class="mb-1">• 1 Carrot</p>
+				<p class="mb-1">• 2 Mushroom</p> 
+				<p class="mb-1">• 2 Cabbage Leaves</p> 
+				<p class="mb-1">• 1/4 Onion</p> 
+				<p class="mb-1">• Black Pepper</p>
+				<p class="mb-1">• Cooked Yakisoba noodles</p>
+				<p class="mb-1">• 1 Egg (Optional)</p> 
+				<p class="mb-1">For Yakisoba Sauce (store-bough optional)</p>  
+				<ul>
+					<p class="mb-1">• 4 tablespoons of worchestshire</p>
+					<p class="mb-1">• 4 tablespoons of oyster sauce</p>
+					<p class="mb-1">• 4 teaspoons of ketchu</p>
+					<p class="mb-1">• 2 teaspoons of soy sauce</p>
+					<p class="mb-1">• 2 teaspoons of sugar</p>
+				</ul>  	
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Combine sauce ingredients in a bowl and set aside.</p>
+			  <p class="mb-1">2. Slice carrot, mushroom, and onion into julienne strips. Cut cabbage and pork belly into bite-size pieces.</p>
+			  <p class="mb-1">3. In a skillet or wok, cook pork belly on medium-high heat until well done, and add vegetables after. Cook for 1-2 minutes. Season with black pepper.</p>
+			  <p class="mb-1">4. Lower heat and add yakisoba noodles. Pour yakisoba sauce and mix until it's well incorporated. </p>
+			  <p class="mb-1">5. Optional Step is to cook an egg sunny side up. Place on top of noodles and serve on a plate.</p>
+			  </div> </div>
+			<br>
+		   <div id="oyakodon" class="list-group"> <div class="list-group-item">
+		  <h5 >Oyakodon</h5>
+		  <p>A chicken and egg rice bowl that melts in your mouth!</p>
+		  <span class="badge badge-secondary">5 min</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy-Free</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://i0.wp.com/meshiagare.tokyo/wp-content/uploads/2021/07/oyakodon01.jpg?fit=800%2C640&ssl=1" alt="POyakodon Image" width="50%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 1/2 lb of chicken thighs</p>
+				<p class="mb-1">• 1/4 Onion</p>
+				<p class="mb-1">• 2-3 Eggs</p> 
+				<p class="mb-1">• 1/2 cup of Dashi stock</p> 
+				<p class="mb-1">• 2 tablespoons of soy sauce</p> 
+				<p class="mb-1">• 2 tablespoons of sugar</p>
+				<p class="mb-1">• 2 tablespoons of mirin</p>
+				<p class="mb-1">• Short grain rice</p> 
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. In a saucepan, add Dashi, soy sauce, sugar, and mirin and simmer at medium heat.</p>
+			  <p class="mb-1">2. Slice onions into thin strips and add to mix. Cook for 5 minutes or until transparent.</p>
+			  <p class="mb-1">3. Cut chicken into bite-size pieces and add to mix. Cook thoroughly for 5 minutes until meat is no longer pink.</p>
+			  <p class="mb-1">4. Beat eggs and slowly drizzle across the saucepan. Cook at a medium heat until eggs are cooked, or slightly runny depending on preference. </p>
+			  <p class="mb-1">5. Use a spatula to scoop food and put over a bowl of rice.</p>
+			  </div> </div>
+			<br>
+		  <div id="salmon-ochazuke" class="list-group"> <div class="list-group-item">
+		  <h5>Salmon Ochazuke</h5>
+		  <p>Crispy lightly-salted salmon with rice submerged in a savory tea-based broth</p>
+		  <span class="badge badge-secondary">10-15 min</span>
+		  <span	class="badge badge-success">Vegan</span>
+		  <span class="badge badge-primary">Dairy-Free</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://thejapanstore.us/wp-content/uploads/2021/11/shutterstock_682330114-1-2-scaled.jpg" alt="Salmon Ochazuke Image" width="60%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 1 slice of salmon</p>
+				<p class="mb-1">• Short grained rice</p>
+				<p class="mb-1">• 1/2 cup of brewed green tea</p> 
+				<p class="mb-1">• 1/2 tablespoon Dashi granules</p> 
+				<p class="mb-1">• 2 teaspoons of soy sauce</p> 
+				<p class="mb-1">• 2 tablespoons of sugar</p>
+				<p class="mb-1">• Short grain rice</p> 
+			</div> <div  class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Season salmon with salt and cook over pan or oven for 7-8 minutes until cooked.</p>
+			  <p class="mb-1">2. In a saucepan, add green tea, Dashi granules, soy sauce, and sugar. Mix unil sugar is dissolved. Simmer broth at low heat for 3-5 minutes.</p>
+			  <p class="mb-1">3. Place salmon over rice (cutting it pieces is optional) in a medium-sized bowl.</p>
+			  <p class="mb-1">4. Pour green tea broth in dish and enjoyed. Better tastes when adding seaweed or rice crisps.</p>
+			  </div> </div>
+			<br>
+		  <div id="tonkatsu" class="list-group"> <div class="list-group-item">
+		  <h5>Tonkatsu</h5>
+		  <p>Fried Pork Cutlet dipped with a savory sauce that can be enjoyed with noodles, rice, or just by itself. </p>
+		  <span class="badge badge-secondary">10-15 min</span>	
+		  </div> 
+			  <div class="list-group-item">
+			  <img src="https://www.thespruceeats.com/thmb/vZmyXlZwV_Ja8F8-wVIiJphfj2k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tonkatsu-recipe-japanese-breaded-and-deep-fried-pork-2031274-hero-01-31a9f4e17fc04eeba22dee6c0caf27b7.jpg" alt="Tonkatsu Image" width="60%"></div>
+			  <div class="list-group-item">
+			<h5 class="mb-1">Ingredients</h5>
+				<p class="mb-1">• 1/2 lb of Pork Loin or Chop</p>
+				<p class="mb-1">• Panko breadcrumbs</p> 
+				<p class="mb-1">• 1 eggs</p> 
+				<p class="mb-1">• 2 tablespoons all-purpose flour</p> 
+				<p class="mb-1">• 2 tablespoons of sugar</p>
+				<p class="mb-1">• Shredded cabbage</p>
+				<p class="mb-1">• Short grain rice</p>
+				<p class="mb-1">For Sauce: </p>  
+				<ul>
+					<p class="mb-1">• 4 1/2 tablespoon Worcestshire sauce</p> 
+					<p class="mb-1">• 2 tablespoons of sugar</p>
+					<p class="mb-1">• 5 tablespoons of ketchup</p>
+					<p class="mb-1">• 2 tablespoons of oyster sauce</p>
+				</ul>
+			</div> <div class="list-group-item">
+			  <h5 class="mb-1">Steps</h5>
+			  <p class="mb-1">1. Slice pork into desired pieces and pound meat with a mallet. Season pork with salt and pepper evenly after. </p>
+			  <p class="mb-1">2. Prepare three bowls: one to whisk an egg, one for all-purpose flour, and one for Panko breadcrumbs</p>
+			  <p class="mb-1">3. Dredge pork in flour, dip it in egg, and coat with panko breadcrumbs in that order. Set it aside for 5-10 minutes while preparing fryer.</p>
+			  <p class="mb-1">4. In a frying pot or deep fryer, gently put one piece of pork at 340F and cook until golder. Cool and drain excess oil in a paper-towel tray for 5 minutes. </p>
+			  <p class="mb-1">5. Combine all sauce ingredients thoroughly. Serve tonkatsu with sauce and shredded cabbage or rice. </p>
+			  </div> </div>	
+		</div>	
+		</div>	
+	</div>	
+</main>	
+	
+	
+<!--Script Files from Dreamweaver-->	
+<script src="file:///C|/Users/moniq/AppData/Roaming/Adobe/Dreamweaver 2021/en_US/Configuration/Temp/Assets/eam579A.tmp/js/jquery-3.4.1.min.js"></script>
+<script src="file:///C|/Users/moniq/AppData/Roaming/Adobe/Dreamweaver 2021/en_US/Configuration/Temp/Assets/eam579A.tmp/js/popper.min.js"></script>
+<script src="file:///C|/Users/moniq/AppData/Roaming/Adobe/Dreamweaver 2021/en_US/Configuration/Temp/Assets/eam579A.tmp/js/bootstrap-4.4.1.js"></script>	
+	
+</body>
+</html>

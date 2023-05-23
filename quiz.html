@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>quiz</title>
+<link href="../midterm-japanesecuisine/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="quiz.css" rel="stylesheet" type="text/css">		
+</head>
+
+<body style="background-color: antiquewhite; padding-top: 70px;">
+
+<!--Utilized Navbar template from https://getbootstrap.com/docs/4.0/components/navbar/-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+  <a class="navbar-brand" href="../midterm-japanesecuisine/home.html" style="font-family: Palatino">TASTE OF JAPAN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+		  <a class="nav-link" href="../midterm-japanesecuisine/home.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../midterm-japanesecuisine/recipes.html">Recipes</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="../midterm-japanesecuisine/quiz.html">Quiz<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>		
+	
+<h1 style="font-family:Palatino; margin:20px auto" class="text-capitalize offset-10"><strong>Ready to test your knowledge on Japanese cuisine? Or test your knowledge on one category? Get started on here!</strong></h1>
+<div class="container">
+  <p>Click the dropdown or one of the sections to try a quiz and maybe learn new things. No final results here, this is all a learning process!</p>	
+</div>	
+<div class="container">
+  <div class="dropdown show"> <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quiz Type </a>
+    <div class="dropdown-menu">
+	  <h6 class="dropdown-header">Pick a test to choose from.</h6>
+	  <a class="dropdown-item" href="#soupstest" data-target="#collapseOne1" data-parent="#accordion1">Soups</a> 
+	  <a class="dropdown-item" href="side-dishes" data-target="#collapseOne2" data-parent="#accordion2">Side Dishes</a> 
+	  <a class="dropdown-item" href="#main-dishes" data-target="#collapseOne3" data-parent="#accordion3">Main Dishes</a>
+		<div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Hard Mode</a> </div>
+  </div>
+  <br>
+  <!--developed with a small quiz for each section form bootstrap-->	
+	<div id="accordion1" role="tablist">
+	  <div class="card">
+		<div class="card-header" role="tab" id="soupstest">
+		  <h5 class="mb-0"> 
+		  <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> Soups Test </a> 
+		  </h5>
+		</div>
+		<div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="soupstest" data-parent="#accordion1">
+		  <div class="card-body">
+			  <form>	
+				<div id="soups1" class="question">
+					<p>1. Which soup recipe requires miso paste?</p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Udon's broth mainly asks for dashi.">Udon Soup</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="As the name suggest, miso soup needs miso paste.">Miso Soup</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="It is highly recommended to add miso paste after the pork broth has finished.">Tonjiru</button>
+			    </div>		  
+				<div id="soups2" class="question" style="display: none;">
+					<p>2. How long does it take for tonjiru to cook? </p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="This is probably the time for prep work.">5-10 min</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Over-simmered and everything will be soggy or over-cooked">30-60min</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Including time for prep work and cooking for efficiency.">20-30min</button>	
+			    </div>  
+				<div id="soups3" class="question" style="display: none;">
+					  <p>3. What are some ingredients you can add to a hot pot? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Meat Meat Meat!">Beef Slices</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Over-simmered and everything will be soggy or over-cooked">Corn</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Including time for prep work and cooking for efficiency.">Napa Cabbage</button>
+			    </div>
+				  <div id="soups4" class="question" style="display: none;">
+					  <p>4. Which one of these is vegan? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Although you can choose to add meat, you can also choose only add vegetables and tofu.">Sukiyaki Hot Pot</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Miso and tofu is primarily made of soy beans, so it is vegan vegetarian friendly">Miso Soup</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="The recipe calls for porkbelly.">Tonjiru</button>
+				  </div>
+				  <div id="soups5" class="question" style="display: none;">
+					  <p>5. What is not a topping for udon soup? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Does not sound the most appetizing to mix bread and udon together...">Bread</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Over-simmered and everything will be soggy or over-cooked">Fried Tofu</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Including time for prep work and cooking for efficiency.">Tempura</button>
+			  </div>
+				  <br>
+		</form>	  
+	  <nav aria-label="Page navigation-soups">
+		  <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+		  <ul class="pagination">
+			<li class="page-item"><a class="page-link" onclick="showQuestion('soups1')" href="#soups1">1</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('soups2')" href="#soups2">2</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('soups3')" href="#soups3">3</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('soups4')" href="#soups4">4</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('soups5')" href="#soups5">5</a></li>
+		</ul>
+	  </nav>
+		  </div>
+		</div>
+	  </div>
+	</div>
+<!--side dish test-->
+	<div id="accordion2" role="tablist">
+		<div class="card">
+		<div class="card-header" role="tab" id="sidestest">
+		  <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne2" role="button" aria-expanded="true" aria-controls="collapseOne2"> Side Dishes Test </a> </h5>
+		</div>
+		<div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="sidestest" data-parent="#accordion2">
+		  <div class="card-body">
+			  <form>	
+				<div id="sides1" class="question active">
+					<p>1. Which one does not need frying?</p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="As it says in the name, tofu is fried with cornstarch coating">Fried Tofu</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Rolled omelet asks to cook on a pan over stove-top">Rolled Omelet</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Tempura is a battered-fried dish.">Tempura</button>
+			    </div>		  
+				<div id="sides2" class="question" style="display: none;">
+					<p>2. What doesn't go in a potato salad? </p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Defeats the whole point of a potato salad...">Potatoes</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Another delicious vegetable to add to any salad">Carrots</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Not only does it not go in a potato salad, it is inedible and not safe for consumption">Tide Pods</button>	
+			    </div>  
+				<div id="sides3" class="question" style="display: none;">
+					  <p>3. Which one of these is a side dish? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="A small bowl of vegetables is a wonderful side to pair with any main dish!">Steamed Vegetables</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Yakisoba is a heavy main dish that can almost fill your stomach">Yakisoba</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Hot pot is a soup base used for a hot pots">Sukiyaki</button>
+			    </div>
+				  <div id="sides4" class="question" style="display: none;">
+					  <p>4. What temperature should you heat up your fryer or pot of cooking oil for tempura? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Too hot">500F</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="This is the cooking temperature for fried tofu.">355</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Just right">330F</button>
+				  </div>
+				  <div id="sides5" class="question" style="display: none;">
+					  <p>5. If you had a round pan, what steps do you need to make tamagoyaki? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="That's scrambled eggs.">Stir-fry it</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="This step is important to roll omelet into a prism">Fold the sides of the egg after cooked</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You would then have a burnt egg pancake-crepe"> Let it sit there until cook</button>
+			    </div>
+			  </form>	
+		<br>	
+	<!--Ran into a problem where the form does not appear until interacting with other pagination bootstraps. Unsure of the reason-->		  
+	  <nav aria-label="Page navigation-sides">
+		  <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+		  <ul class="pagination">
+			<li class="page-item"><a class="page-link" onclick="showQuestion('sides1')" href="#sides1">1</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('sides2')" href="#sides2">2</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('sides3')" href="#sides3">3</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('sides4')" href="#sides4">4</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('sides5')" href="#sides5">5</a></li>
+		</ul>
+	  </nav>		  
+		  </div>
+		</div>
+	  </div>
+	</div>		  
+
+	<div id="accordion3" role="tablist">
+	  <div class="card">
+		<div class="card-header" role="tab" id="entreetest">
+		  <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne3" role="button" aria-expanded="true" aria-controls="collapseOne3"> Main Dishes Test </a> </h5>
+		</div>
+		<div id="collapseOne3" class="collapse" role="tabpanel" aria-labelledby="entreetest" data-parent="#accordion3">
+		  <div class="card-body">
+			  <form>	
+				<div id="entree1" class="question">
+					<p>1. In Salmon Ochazuke, what key ingredient does it need for its broth?</p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="The texture of carbonation and rice together doesn't sound so please...">Soda</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="That sounds very yucky.">Orange Juice</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Green tea with dashi and soy sauce brings a bitter yet savory taste to the broth.">Green Tea</button>
+			    </div>		  
+				<div id="entree2" class="question" style="display: none;">
+					<p>2. How should you cook the egg for oyakodon? </p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Interesting way, but not what the outcome should be.">cook it sunny-side up over the chicken in pan</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You can, but that will reuire extra steps and can't enjoy oyakodon as a whole">Cook it by itself</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Consistent with chicken and mixes with the leftover dashi stock for savory taste">Beat and drizzle over the chicken in pan</button>	
+			    </div>  
+				<div id="entree3" class="question" style="display: none;">
+					  <p>3. How long do you need to simmer the ingredients beforry adding curry roux for curry? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Too long">20-50 min</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Just right">15-20min</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Too short">5 min </button>
+			    </div>
+				  <div id="entree4" class="question" style="display: none;">
+					  <p>4. Which of these is in the sauce for tonkatsu? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Oil is not included in the sauce">Peanut oil</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="A sauce mixed with worcesture and more brings a sweet flavor to tonkatsu's bold and salty taste.">Ketchup</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Too vinegary for the dause">Mustard</button>
+				  </div>
+				  <div id="entree5" class="question" style="display: none;">
+					  <p>3. Which ones does not include rice in the recipe?</p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Yakisoba is a noodles-based dish and doesn't need rice">Yakisoba</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="It is optional to have tonkatsu with rice.">Tonkatsu</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Chicken and egg rice bowl, that, needs rice">Oyakodon</button>
+			  </div>
+		</form>	  
+			  <br>
+	  <nav aria-label="Page navigation example">
+		  <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+		  <ul class="pagination">
+			<li class="page-item"><a class="page-link" onclick="showQuestion('entree1')" href="#entree1">1</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('entree2')" href="#entree2">2</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('entree3')" href="#entree3">3</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('entree4')" href="#entree4">4</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('entree5')" href="#entree5">5</a></li>
+		</ul>
+	  </nav>		  
+		  </div>
+		</div>
+	  </div>
+	</div>	
+	
+	<div id="accordion4" role="tablist">
+		<div class="card">
+		<div class="card-header" role="tab" id="hardtest">
+		  <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne4" role="button" aria-expanded="true" aria-controls="collapseOne4"> Hard Test </a> </h5>
+		</div>
+		<div id="collapseOne4" class="collapse" role="tabpanel" aria-labelledby="sidestest" data-parent="#accordion4">
+		  <div class="card-body">
+			  <form>	
+				<div id="hard1" class="question active">
+					<p>1. Which one does not requires cooking in a pan over stovetop?</p>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You'll be cooking chicken andbeaten together in a pan">Oyakodon</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Although its over stovetop, you'll need a sauce pan or pot to hold the curry's contents">Curry</button>
+					<button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You'll need a pan to cook and roll beaten egg.">Rolled Omelet</button>
+			    </div>		  
+				<div id="hard2" class="question" style="display: none;">
+					<p>2. What are some ingredients you can add to a hot pot? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You can try, but it'll be too sour to enjoy">Lemon Juice</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Cake's sweetness will overpower hotpot and wouldn't taste great">Cake</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="a great base of vegetables and delclious to eat from a hot pot.">Napa Cabbage</button>	
+			    </div>  
+				<div id="hard3" class="question" style="display: none;">
+					  <p>3. If you had a round pan, what steps do you need to make tamagoyaki? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="That's scrambled eggs.">Stir-fry it</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="This step is important to roll omelet into a prism">Fold the sides of the egg after cooked</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="You would then have a burnt egg pancake-crepe"> Let it sit there until cook</button>
+			    </div>
+				  <div id="hard4" class="question" style="display: none;">
+					  <p>4. What temperature should you heat up your fryer or pot of cooking oil for fried tofu? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Too hot">500F</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="This is the cooking temperature for fried tofu.">355</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="This is the cooking temperature for tempura.">330F</button>
+				  </div>
+				  <div id="hard5" class="question" style="display: none;">
+					  <p>5. In yakisoba, how should you cut you carrots and cabbage? </p>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Correct!" data-content="Too hot">Julienne strips</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="To small to enjoy vegetables in the dish, becomes more of a garnish">Mince them</button>
+					  <button type="button" class="btn btn-dark" data-toggle="popover" data-trigger="focus" title="Incorrect!" data-content="Having big chunky pieces of vegetable in yakisoba is not consistent with the noodles">Bite-size pieces</button>
+			    </div>
+			  </form>	
+		<br>	
+	<!--Ran into a problem where the form does not appear until interacting with other pagination bootstraps. Unsure of the reason-->		  
+	  <nav aria-label="Page navigation-sides">
+		  <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+		  <ul class="pagination">
+			<li class="page-item"><a class="page-link" onclick="showQuestion('hard1')" href="#hard1">1</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('hard2')" href="#hard2">2</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('hard3')" href="#hard3">3</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('hard4')" href="#hard4">4</a></li>
+			<li class="page-item"><a class="page-link" onclick="showQuestion('hard5')" href="#hard5">5</a></li>
+		</ul>
+	  </nav>		  
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>		  
+	
+	
+	
+	
+<!--JS Coding-->
+<script>
+//function to show current question with pagination
+    function showQuestion(question) {
+    // Hide all questions
+		var questions = document.getElementsByClassName('question');
+		for (var i = 0; i < questions.length; i++) {
+		  questions[i].style.display = 'none';
+		}
+    // Show the selected question
+		var question = document.getElementById(question);
+		if (question) {
+		  question.style.display = 'block';
+		}
+    }
+//function to link drop down items to collapse
+  const dropdownItems = document.querySelectorAll('.dropdown-item');
+  
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector(this.getAttribute('data-target'));
+      const parent = document.querySelector(this.getAttribute('data-parent'));
+	  const allCollapseItems = document.querySelectorAll('.collapse');	
+      
+      // Close other collapses in the parent accordion element
+      const collapses = parent.querySelectorAll('.collapse');
+      collapses.forEach(collapse => {
+        collapse.classList.remove('show');
+      });
+		
+	  // Close other collapses in the document
+      allCollapseItems.forEach(collapse => {
+        if (collapse !== target) {
+          collapse.classList.remove('show');
+        }
+      });
+      // Open the target collapse
+	  target.classList.toggle('show');	
+    });
+  });
+	
+</script>	
+	
+<!--Plugins-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<!--Popover Plugin from https://www.w3schools.com/bootstrap/bootstrap_popover.asp-->
+<script> 
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</script>	
+</body>
+</html>

@@ -1,0 +1,98 @@
+@charset "utf-8";
+header{
+		background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/79/53579b28cb9ae3e.jpg');
+		padding: 40px;
+		font-size: 60px;
+		font-family: Constantia;
+		background-size: cover;
+}
+body{
+	background-color: antiquewhite;
+	padding-top: 70px;
+	position: relative;
+}
+h6{
+	font-family: Palatino;
+	color: rgba(9,7,1,1.00);
+	font-style: italic;
+}
+h4{
+	font-family: Palatino;
+	padding: 10px;
+	margin: 20px;
+	background-color: rgba(141,117,88,0.67);
+	vertical-align: middle;
+}
+h3{
+	font-family: Palatino;
+	margin-top:70px;
+	padding: 10px;
+}
+.carousel-caption{
+	background-color: rgba(141,117,88,0.67); 
+	margin-bottom: 5px; 
+	padding-top:20px;
+	padding-left:20px;
+}	
+.carousel-caption h5{
+	font-family: Palatino;
+	font-style: bold;
+	font-size: 40px;
+	vertical-align: bottom;
+	color: black;
+}
+.carousel-caption h4{
+	font-family: Palatino;
+	font-style: bold;
+	font-size: 40px;
+	vertical-align: bottom;
+	color: black;
+}
+
+p{
+	font-family: Palatino;
+	font-style: italic;
+	color: darkgray;
+	padding: 40px;
+}	
+
+.video-container {
+  width: 60%; /*adjust width to 80% of original*/	
+  margin: 0 auto; /* Centers the container horizontally */
+  padding-left: 50px;	
+  display: flex; /* Add flex display */
+  flex-wrap: wrap; /* Enable wrapping for the videos */
+  justify-content: space-between; /* Add space between the videos */
+}
+
+.video-container .embed-responsive {
+  flex: 0 0 calc(50% - 10px); /* Adjust the width of the video containers */
+  margin-bottom: 10px; /* Add some spacing between the videos */
+}
+
+.card-link-1 {
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.card-link-2 {
+	background-color: #cce5ff;
+	color: #004085;
+}
+.card-text{
+	padding: 10px;
+}
+
+.jumbotron-fluid{
+	background-color: rgba(224,199,166,1.00);
+	padding: 40px;
+	margin-bottom: 50px;
+}
+.btn-custom{
+	align: center;
+	background-color: saddlebrown;
+	color: white;
+}
+
+
+
